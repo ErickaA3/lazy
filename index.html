@@ -19,6 +19,7 @@
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
         </style>
+       <script src="javascript/main.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: 'Concert One', cursive;">
-                <img src="Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+                <img src="img/Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
                 <h1 class="m-0">LAZY</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,34 +47,34 @@
             <div class="row">
                 <div class="col-md-3"> 
                     
-                        <img src="lazy2.png" width="170px" height="170px" alt="">
-                        <a href="process.html"><h2 style="font-family: 'Concert One', cursive;"class="bg-body-tertiary rounded">ericka_2006</p></a>
+                        <img src="img/lazy2.png" width="170px" height="170px" alt="">
+                        <p>USUARIO</p>
+                        <a href="process.html"><h2 style="font-family: 'Concert One', cursive;"class="bg-body-tertiary rounded">ericka_2006</p></a></a>
                    
                 </div>
                 <div class="col-md-3 ">
-                    <img src="modena2.png" alt="" width="170px" height="170px"> 
+                    <img src="img/modena2.png" alt="" width="170px" height="170px"> 
+                    <P>MONEDAS</P>
                     <h2 style="font-family: 'Concert One', cursive;"class="bg-body-tertiary rounded">1,000,000</p>
+                        
                 </div>
                 <div class="col-md-3 ">
-                    <img src="grado2.png" alt="" width="170px" height="170px"> 
+                    <img src="img/grado2.png" alt="" width="170px" height="170px"> 
+                    <p>GRADO</p>
                     <h2 style="font-family: 'Concert One', cursive;" class="bg-body-tertiary rounded">Undécimo</p>
                 </div>
                 <div class="col-md-3 ">
-                    <img src="gancho2.png"  width="170px" height="170px" alt="">
+                    <img src="img/gancho2.png"  width="170px" height="170px" alt="">
+                    <P>DISEÑO</P>
                     <a href="process.html"><h2 style="font-family: 'Concert One', cursive;"class="bg-body-tertiary rounded">¡Estilizar!</p></a></a>
                 </div>
             </div>
             
     </div>
-    
-    
-
 
 </div>
 
-                
-    
-    <div class="container p-">
+    <div class="container p-7">
         <div class="row">
             <div class="col-md-3 mt-2">
                 <div class="accordion accordion-flush mt-4 rounded" id="accordionFlushExample">
@@ -86,12 +87,13 @@
                       <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <a href="process.html" class="btn boton" role="button">Primero</a>
-                                <a href="process.html" class="btn boton" role="button">Segundo</a>
-                                <a href="process.html" class="btn boton" role="button">Tercero</a>
-                                <a href="process.html" class="btn boton" role="button">Cuarto</a>
-                                <a href="process.html" class="btn boton" role="button">Quinto</a>
-                                <a href="process.html" class="btn boton" role="button">Sexto</a>
+                                <button id="btnPrimero" class="btn boton" style="background-color: #77dbfc;" type="button">Primero</button>
+                                <button id="btnSegundo" class="btn boton" style="background-color: #4ad2ff;" type="button">Segundo</button>
+                                <button id="btnTercero" class="btn boton" style="background-color: #41c3ee;" role="button">Tercero</button>
+                                <button id="btnCuarto" class="btn boton" style="background-color: #46b4e0" role="button">Cuarto</button>
+                                <button id="btnQuinto" class="btn boton" style="background-color: #2499c7" role="button">Quinto</button>
+                                <button id="btnSexto" class="btn boton" style="background-color:#006691;" role="button">Sexto</button>
+
                             </div>
                             
                         </div>
@@ -122,50 +124,278 @@
           
     </div>
     <div class="col-md-7 mt-3">
-        <div class="container text-celestepastel rounded p-10 mt-3">
-            <a href="juegos.html" class="text-white" style="text-decoration: none;">
-                <h1 style="font-family: 'Concert One', cursive;">Primero</h1>
-            </a>
-            <div class="container bg-white rounded p-2 mt-2">
-                <div class="d-flex justify-content-between">
-                    <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
-                    <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+       
+            <div id="PrimeroMaterias" class="materias" >
+                <div class="container rounded p-10 mt-3" style="background-color: #77dbfc;" >
+                <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                    <h1 style="font-family: 'Concert One', cursive;">Primero</h1>
+                </a>
+                <div class="container bg-white rounded p-2 mt-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                        <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                    </div>
+                </div>
+            
+                <div class="container bg-white rounded p-2 mt-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                        <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                    </div>
+                </div>
+            
+                <div class="container bg-white rounded p-2 mt-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                        <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                    </div>
+                </div>
+            
+                <div class="container bg-white rounded p-2 mt-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                        <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                    </div>
+                </div>
+            
+                <div class="container bg-white rounded p-2 mt-2 mb-6">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                        <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                    </div>
+                    
+                </div>
+            
+                <br>
+            </div>
+            </div>
+            <div id="SegundoMaterias" class="materias" style="display:none;">
+                <div class="container rounded p-10 mt-3" style="background-color: #4ad2ff" >
+                    <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                        <h1 style="font-family: 'Concert One', cursive;">Segundo</h1>
+                    </a>
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                            <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                            <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                            <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                            <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2 mb-6">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                            <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                        
+                    </div>
+                
+                    <br>
                 </div>
             </div>
-        
-            <div class="container bg-white rounded p-2 mt-2">
-                <div class="d-flex justify-content-between">
-                    <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
-                    <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+            <div id="TerceroMaterias" class="materias" style="display:none;">
+                <div class="container rounded p-10 mt-3" style="background-color: #41c3ee" >
+                    <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                        <h1 style="font-family: 'Concert One', cursive;">Tercero</h1>
+                    </a>
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                            <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                            <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                            <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                            <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2 mb-6">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                            <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                        
+                    </div>
+                
+                    <br>
                 </div>
             </div>
-        
-            <div class="container bg-white rounded p-2 mt-2">
-                <div class="d-flex justify-content-between">
-                    <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
-                    <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+            <div id="CuartoMaterias" class="materias" style="display:none;">
+                <div class="container rounded p-10 mt-3" style="background-color: #46b4e0" >
+                    <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                        <h1 style="font-family: 'Concert One', cursive;">Cuarto</h1>
+                    </a>
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                            <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                            <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                            <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                            <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2 mb-6">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                            <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                        
+                    </div>
+                
+                    <br>
                 </div>
             </div>
-        
-            <div class="container bg-white rounded p-2 mt-2">
-                <div class="d-flex justify-content-between">
-                    <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
-                    <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+            <div id="QuintoMaterias" class="materias" style="display:none;">
+                <div class="container rounded p-10 mt-3" style="background-color: #2499c7" >
+                    <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                        <h1 style="font-family: 'Concert One', cursive;">Quinto</h1>
+                    </a>
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                            <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                            <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                            <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                            <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2 mb-6">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                            <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                        
+                    </div>
+                
+                    <br>
                 </div>
             </div>
-        
-            <div class="container bg-white rounded p-2 mt-2 mb-6">
-                <div class="d-flex justify-content-between">
-                    <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
-                    <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+            <div id="SextoMaterias" class="materias" style="display:none;">
+                <div class="container rounded p-10 mt-3" style="background-color: #006691" >
+                    <a href="juegos.html" class="text-white" style="text-decoration: none;">
+                        <h1 style="font-family: 'Concert One', cursive;">Sexto</h1>
+                    </a>
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">1 Español</a></p>
+                            <a href="juegos.html" class="btn btn-warning text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">2 Ciencias</a></p>
+                            <a href="juegos.html" class="btn btn-primary"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">3 Matemáticas</a></p>
+                            <a href="juegos.html" class="btn btn-success"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">4 Estudios Sociales</a></p>
+                            <a href="juegos.html" class="btn btn-danger"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                    </div>
+                
+                    <div class="container bg-white rounded p-2 mt-2 mb-6">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary"><a href="juegos.html" style="text-decoration: none; color: inherit;">5 Inglés</a></p>
+                            <a href="juegos.html" class="btn morado text-white"><i class="fa-solid fa-play"></i>  Comenzar</a>
+                        </div>
+                        
+                    </div>
+                
+                    <br>
                 </div>
             </div>
-        
-            <br>
-        </div>
+       
         
       </div>
-        
+      <br>
+      <footer class="text-center">
+        ©LAZY Todos los derechos reservados, 2023
+      </footer>
 </div>
 <div class="tpl-snow">
     <div></div>

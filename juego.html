@@ -1,24 +1,29 @@
-
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAZY</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"><link rel="shortcut icon" href="Lazy.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Lazy.png">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-        </style>
-       <style>
+    </style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fira+Code&family=Itim&display=swap');
-      </style>
-      <style>
+    </style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
-        </style>
+    </style>
+    
+    <script src="javascript/puerta.js"></script>
 </head>
 
 <body>
@@ -26,95 +31,92 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: 'Concert One', cursive;">
-                <img src="Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+                <img src="img/Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
                 <h1 class="m-0">LAZY</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
         </div>
     </nav>
-    
-    <div class="mi-contenedor mt-4 rounded p-10 mt-5 borderr text-center ">
-       <h1 style="font-family: 'Concert One', cursive;">The Enchanted Forest Adventure</h1>
-        <div class="container p-10 rounded-3" style="font-size:24px ; background-color: rgb(214, 228, 255); text-align: justify;">
-            <p><u>Once upon a time</u>, in a <u>faraway</u> land, there was a small village <u>nestled</u> at the <u>edge</u> of an <u>enchanted</u> forest. This <u>forest</u> was rumored to be magical, full of wonders <u>beyond</u> imagination. <u>However</u>, no one from the village had ever <u>dared to venture</u> into its <u>depths</u>.</p>
-            <p>In this village <u>lived</u> a curious <u>young</u> girl named Emma. She had heard <u>tales </u>of the enchanted forest <u>since</u> she was a child and her heart <u>brimmed</u> with the <u>desire</u> to explore it. One bright morning, <u>fueled</u> by her adventurous <u>spirit</u>, Emma packed a small <u>bag</u> with provisions and set off <u>towards</u> the forest.</p>
-            <p>As Emma <u>entered</u> the forest, she was <u>met</u> with a <u>kaleidoscope</u> of colors. Trees <u>seemed</u> to <u> shimmer with a soft</u>, <u>otherworldly glow</u>, and flowers danced with the gentle <u>breeze</u>. Birds <u>sang</u> melodies that <u>tickled the ears</u> , as if welcoming her to this magical <u>realm</u>.</p>
+    <div class="container bg-white mt-4 rounded p-5 mt-5 borderr text-center">
+        <div class="video-puerta">
+            <video src="img/puerta-w--unscreen.mp4" autoplay muted></video>
+            <div id="paso1" class="texto" style="display:none;">
+                <p>5 x ( 3 + 6 ) - 7</p>
+            </div>
         </div>
-      
-          
-        <div class="container p-10 rounded-3 position-relative" style="background-color: #dadada; text-align: center;">
-            <button type="button" class="btn btn-secondary btn-lg float-end"><i class="fa-solid fa-play"></i> Siguiente Página</button>
-            
-            <button type="button" class="btn btn-secondary btn-lg float-start"><audio controls><source src="audio1.mp3" type="audio/mpeg">Tu navegador no soporta la reproducción de audio.</audio></button>
+        <div id="primero" style="display:none;">
+            <br>
+            <h1>¿Que realizamos primero?</h1>
+                <button id="r1"type="button" class="btn btn-danger btn-lg">Paréntesis</button>
+                <button  id="r2"type="button" class="btn btn-warning btn-lg">Resta</button>        
+                <button id="r3" type="button" class="btn btn-primary btn-lg">Multiplicación</button>
         </div>
-        
-        
-    </div>
-</div>
-       
-    </div>
-   
-      </div>
-        
-</div>
-<div class="tpl-snow">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
+        <br>
+        <div id="correcto" style="display:none;">
+            <h4 class="text-success" >¡Correcto!</h4>
+        </div>
+        <div>
+            <h4 class="text-danger" style="display:none;">Incorrecto!</h4>
 
-<script
-      src="https://kit.fontawesome.com/0670e3e77f.js"
-      crossorigin="anonymous"
-    ></script>
+        </div>
+    </div>
+    
+    <div class="tpl-snow">
+        
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/0670e3e77f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
