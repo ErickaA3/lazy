@@ -40,28 +40,78 @@
         </div>
     </nav>
     <div class="container bg-white mt-4 rounded p-5 mt-5 borderr text-center">
-        <div class="video-puerta">
-            <video src="img/puerta-w--unscreen.mp4" autoplay muted></video>
-            <div id="paso1" class="texto" style="display:none;">
-                <p>5 x ( 3 + 6 ) - 7</p>
+        <!-- Sección de video -->
+        <div class="row">
+            <div class="col-md-7 mt-3">
+                <div class="video-puerta">
+                    <video  id="video" src="img/puerta-w--unscreen.mp4" autoplay muted></video>
+                    
+                    <!-- Paso 1 -->
+                    <div id="paso1" class="texto" style="display:none;">
+                        <p>5 x ( 3 + 6 ) - 7</p>
+                    </div>
+                    
+                    <!-- Paso 2 -->
+                    <div id="paso2" class="texto" style="display:none;">
+                        <p>5 x <strong>9</strong> - 7</p>
+                    </div>
+                    
+                    <!-- Paso 3 -->
+                    <div id="paso3" class="texto" style="display:none;">
+                        <p><strong>45</strong> - 7</p>
+                    </div>
+                    
+                    <!-- Paso 4 -->
+                    <div id="paso4" class="texto" style="display:none;">
+                        <br>
+                        <br>
+                        <br>
+                        <p>5 x ( 3 + 6 ) - 7</p>
+                        <p>5 x 9 - 7</p>
+                        <p>47-7</p>
+                        <p>R/38</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="primero" style="display:none;">
-            <br>
-            <h1>¿Que realizamos primero?</h1>
+            <div class="col-md-4 mt-3 ">
+                <!-- Paso 1: Botones -->
+            <div id="primero" style="display:none;">
+                <br>
+                <h1>¿Que realizamos primero?</h1>
                 <button id="r1"type="button" class="btn btn-danger btn-lg">Paréntesis</button>
                 <button  id="r2"type="button" class="btn btn-warning btn-lg">Resta</button>        
                 <button id="r3" type="button" class="btn btn-primary btn-lg">Multiplicación</button>
-        </div>
-        <br>
-        <div id="correcto" style="display:none;">
-            <h4 class="text-success" >¡Correcto!</h4>
-        </div>
-        <div>
-            <h4 class="text-danger" style="display:none;">Incorrecto!</h4>
-
+            </div>
+            
+            <!-- Paso 2: Botones -->
+            <div id="segundo" style="display:none;">
+                <br>
+                <h1>¿Multiplicamos o restamos?</h1>
+                <button id="r4"type="button" class="btn btn-danger btn-lg">Resta</button>
+                <button  id="r5"type="button" class="btn btn-warning btn-lg">Multiplicación</button>        
+            </div>
+            
+            <!-- Paso 3: Botones -->
+            <div id="tercero" style="display:none;">
+                <br>
+                <h1>¿Cual es el resultado de 45 - 7?</h1>
+                <button id="r6"type="button" class="btn btn-danger btn-lg">-32</button>
+                <button  id="r7"type="button" class="btn btn-warning btn-lg">38</button> 
+                <button  id="r8"type="button" class="btn btn-primary btn-lg">32</button>              
+            </div>
+            
+            <!-- Mensajes de Correcto e Incorrecto -->
+            <div id="correcto" style="display:none;">
+                <h4 class="text-success" >¡Correcto!</h4>
+            </div>
+            <div id="incorrecto"style="display:none;">
+                <h4 class="text-danger" >¡Incorrecto!</h4>
+            </div>
+            </div>
+            
         </div>
     </div>
+    
     
     <div class="tpl-snow">
         
