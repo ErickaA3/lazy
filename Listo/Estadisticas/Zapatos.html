@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/0670e3e77f.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_Estadisticas.css">
+  <link rel="shortcut icon" href="img/Lazy.png">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+  </style>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fira+Code&family=Itim&display=swap');
+  </style>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+  </style>
+  <title>¿Cuales Zapatos?</title>
+</head>
+<body>
+    
+    <div class="fondo"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: 'Concert One', cursive;">
+                <img src="img/Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+                <h1 class="m-0">LAZY</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+<div class="container ">
+  <h1 class="text-center mt-4 mb-4">¿Cuales Zapatos?</h1>
+  <div class="fondo-historia">
+  <div id="historia" >
+    <p>Lulu, una niña emocionada por su próximo ingreso a la escuela, decidió buscar un par de zapatos nuevos. Sin embargo, su deseo de ahorrar dinero para comprar otro par de zapatos para ocasiones especiales la hizo pensar cuidadosamente. Cuando llegó a la tienda de zapatos, la amable vendedora le presentó varias opciones.</p>
+
+    <p>Los zapatos A, con un precio de 12,000 colones, eran asequibles y prácticos. Lulu los consideró una buena opción para el uso diario en la escuela. Sin embargo, su mente también se desvió hacia los zapatos B, que tenían un costo de 15,900 colones. Eran un poco más caros, pero eran elegantes y podrían ser adecuados para ocasiones especiales y eventos escolares.</p>
+    
+    <p>Por otro lado, los zapatos C, con un precio de 25,000 colones, llamaron la atención de Lulu debido a su diseño único y sofisticado. Aunque eran un poco caros para su presupuesto, Lulu se imaginó luciéndolos en eventos especiales y ocasiones importantes.</p>
+    
+    <p>Finalmente, los zapatos D, con un precio de 13,500 colones, parecían una opción intermedia. No eran tan costosos como los C, pero ofrecían un diseño atractivo y versatilidad.</p>
+    
+    <p>Lulu se encontraba en un dilema, ya que tenía que equilibrar su presupuesto con su deseo de tener un par de zapatos especiales para ocasiones especiales. La elección de Lulu no solo definiría su estilo, sino también su capacidad para administrar su dinero. ¿Qué par de zapatos debería llevarse a casa?</p>
+    <p>Este análisis de precios la ayudaría a tomar una decisión informada considerando su presupuesto y sus preferencias personales.</p>  
+  </div>
+</div>
+</div>
+<div class="container mt-5 mb-5 ">
+  <div class="fondo-historia">
+  <h1>Análisis de precios</h1>
+
+  <div id="pregunta1" class="pregunta">
+    <h3>Pregunta 1: ¿Cuál es el precio más económico de todos los zapatos?</h3>
+    <div class="respuesta btn btn-primary" id="respuesta1_1" onclick="verificarRespuesta('correcta', 'respuesta1_1')">₡12,000 (Zapatos A)</div>
+    <div class="respuesta btn btn-success" id="respuesta1_2" onclick="verificarRespuesta('incorrecta', 'respuesta1_2')">₡15,900 (Zapatos B)</div>
+    <div class="respuesta btn btn-danger" id="respuesta1_3" onclick="verificarRespuesta('incorrecta', 'respuesta1_3')">₡25,000 (Zapatos C)</div>
+    <div class="respuesta btn btn-warning" id="respuesta1_4" onclick="verificarRespuesta('incorrecta', 'respuesta1_4')"> ₡13,500 (Zapatos D)</div>
+  </div>
+
+  <div id="pregunta2" class="pregunta" style="display: none;">
+    <h3>Pregunta 2: ¿Cuál es el precio más elevado de todos los zapatos?</h3>
+    <div class="respuesta btn btn-primary" id="respuesta2_1" onclick="verificarRespuesta('incorrecta', 'respuesta2_1')">₡12,000 (Zapatos A)</div>
+    <div class="respuesta btn btn-success" id="respuesta2_2" onclick="verificarRespuesta('incorrecta', 'respuesta2_2')">₡15,900 (Zapatos B)</div>
+    <div class="respuesta btn btn-danger" id="respuesta2_3" onclick="verificarRespuesta('correcta', 'respuesta2_3')">₡25,000 (Zapatos C)</div>
+    <div class="respuesta btn btn-warning" id="respuesta2_4" onclick="verificarRespuesta('incorrecta', 'respuesta1_4')">₡13,500 (Zapatos D)</div>
+  </div>
+
+  <div id="pregunta3" class="pregunta" style="display: none;">
+    <h3>Pregunta 3: ¿Cuál es el promedio de cuánto podría gastar en un par de zapatos que estuvieran entre los más económicos y los más costosos? Formula: (x1+x2+x3...)/Numero de x.</h3>
+    <div class="respuesta btn btn-primary" id="respuesta3_1" onclick="verificarRespuesta('incorrecta', 'respuesta3_1')">I. ₡20,200 </div>
+    <div class="respuesta btn btn-success" id="respuesta3_2" onclick="verificarRespuesta('incorrecta', 'respuesta3_2')">II. ₡15,500</div>
+    <div class="respuesta btn btn-danger" id="respuesta3_3" onclick="verificarRespuesta('incorrecta', 'respuesta3_3')">III. ₡18,300 </div>
+    <div class="respuesta btn btn-warning" id="respuesta3_4" onclick="verificarRespuesta('correcta', 'respuesta3_4')">IV. ₡16,600</div>
+  </div>
+
+  <div id="pregunta4" class="pregunta" style="display: none;">
+    <h3>Pregunta 4: ¿Cuál es la moda de los zapatos?</h3>
+    <div class="respuesta btn btn-primary" id="respuesta4_1" onclick="verificarRespuesta('incorrecta', 'respuesta4_1')">I. A y B</div>
+    <div class="respuesta btn btn-success" id="respuesta4_2" onclick="verificarRespuesta('incorrecta', 'respuesta4_2')">II. B y C</div>
+    <div class="respuesta btn btn-danger" id="respuesta4_3" onclick="verificarRespuesta('incorrecta', 'respuesta4_3')">III. A y D</div>
+    <div class="respuesta btn btn-warning" id="respuesta4_4" onclick="verificarRespuesta('correcta', 'respuesta4_4')">IV. No hay</div>
+  </div>
+
+
+  <!-- Agrega preguntas 3, 4 y 5 de manera similar -->
+
+  <div id="resultado" class="mt-4"></div>
+
+  <div class="mt-4">
+    <button class="btn btn-info" onclick="siguientePregunta()"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  var preguntaActual = 1;
+  var respuestasCorrectas = 0;
+
+  function verificarRespuesta(valorRespuesta, idRespuesta) {
+    var resultadoDiv = document.getElementById("resultado");
+    var respuestaCorrecta = ''; // Variable para almacenar la respuesta correcta
+  
+    if (valorRespuesta === "correcta") {
+      respuestasCorrectas++;
+      resultadoDiv.innerHTML = '<div class="alert alert-success" role="alert">¡Correcto! Has seleccionado la respuesta correcta.</div>';
+    } else {
+      // Obtener la respuesta correcta según la pregunta actual
+      switch (preguntaActual) {
+        case 1:
+          respuestaCorrecta = '₡12,000 (Zapatos A)';
+          break;
+        case 2:
+          respuestaCorrecta = '₡25,000 (Zapatos C)';
+          break;
+            case 3:
+              respuestaCorrecta = '₡16,850';
+              break;
+                case 4:
+                  respuestaCorrecta = 'No hay';
+                  break;
+        // Agrega casos para las demás preguntas según sea necesario
+      }
+  
+      resultadoDiv.innerHTML = '<div class="alert alert-danger" role="alert">Incorrecto. La respuesta correcta es ' + respuestaCorrecta + '.</div>';
+    }
+
+    // Cambia el color de fondo solo de la respuesta seleccionada
+    document.querySelectorAll('.respuesta').forEach(function(element) {
+      if (element.id === idRespuesta) {
+        element.style.backgroundColor = (valorRespuesta === "correcta") ? '' : '';
+      } else {
+        element.style.backgroundColor = '';
+      }
+      element.style.pointerEvents = 'none'; // Deshabilita todas las respuestas
+    });
+
+    // Deshabilita el botón de verificar después de seleccionar una respuesta
+    document.querySelector('button.btn-info').disabled = false;
+  }
+
+  function siguientePregunta() {
+    // Oculta la pregunta actual
+    document.getElementById("pregunta" + preguntaActual).style.display = "none";
+
+    // Incrementa el número de la pregunta actual
+    preguntaActual++;
+
+    // Muestra la siguiente pregunta
+    var siguientePreguntaDiv = document.getElementById("pregunta" + preguntaActual);
+    if (siguientePreguntaDiv) {
+      siguientePreguntaDiv.style.display = "block";
+
+      // Reinicia los mensajes de resultado y habilita las respuestas
+      document.getElementById("resultado").innerHTML = "";
+      document.querySelectorAll('.respuesta').forEach(function(element) {
+        element.style.pointerEvents = 'auto';
+        element.style.backgroundColor = '';
+      });
+      // Habilita el botón de siguiente pregunta
+      document.querySelector('button.btn-info').disabled = true;
+    } else {
+      // Si no hay más preguntas, muestra un mensaje final con el número de respuestas correctas
+      document.getElementById("resultado").innerHTML = '<div class="alert alert-info" role="alert">¡Has completado el análisis! Número de LAZY coins obtenidas: ' + respuestasCorrectas + '</div>';
+      document.querySelector('button.btn-info').disabled = true;
+    }
+  }
+</script>
+
+   
+<div class="tpl-snow">
+        
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script src="https://kit.fontawesome.com/0670e3e77f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<footer class="text-center container mt-4 mb-4 ">
+  ©LAZY Todos los derechos reservados, 2023
+</footer>
+</body>
+</html>

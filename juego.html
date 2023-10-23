@@ -22,6 +22,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+      </style>
     
     <script src="javascript/puerta.js"></script>
 </head>
@@ -42,27 +45,28 @@
     <div class="container bg-white mt-4 rounded p-5 mt-5 borderr text-center">
         <!-- Sección de video -->
         <div class="row">
-            <div class="col-md-7 mt-3">
+            <div class="col-md-6 mt-3">
                 <div class="video-puerta">
+                    
                     <video  id="video" src="img/puerta-w--unscreen.mp4" autoplay muted></video>
                     
                     <!-- Paso 1 -->
-                    <div id="paso1" class="texto" style="display:none;">
+                    <div id="paso1" class="texto" style="font-family: 'Chewy', cursive;display:none; font-size: 40px;">
                         <p>5 x ( 3 + 6 ) - 7</p>
                     </div>
                     
                     <!-- Paso 2 -->
-                    <div id="paso2" class="texto" style="display:none;">
+                    <div id="paso2" class="texto" style="display:none; font-family: 'Chewy', cursive;  font-size: 40px;">
                         <p>5 x <strong>9</strong> - 7</p>
                     </div>
                     
                     <!-- Paso 3 -->
-                    <div id="paso3" class="texto" style="display:none;">
+                    <div id="paso3" class="texto" style="display:none; font-family: 'Chewy', cursive;  font-size: 40px;">
                         <p><strong>45</strong> - 7</p>
                     </div>
                     
                     <!-- Paso 4 -->
-                    <div id="paso4" class="texto" style="display:none;">
+                    <div id="paso4" class="texto" style="display:none; font-family: 'Chewy', cursive; font-size: 32px;">
                         <br>
                         <br>
                         <br>
@@ -73,40 +77,75 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-3 ">
+            <div class="col-md-5  ">
                 <!-- Paso 1: Botones -->
+                <div class=" puerta-contenedor mb-4 mt-5  text-black ">
+                    
+                
             <div id="primero" style="display:none;">
                 <br>
-                <h1>¿Que realizamos primero?</h1>
-                <button id="r1"type="button" class="btn btn-danger btn-lg">Paréntesis</button>
-                <button  id="r2"type="button" class="btn btn-warning btn-lg">Resta</button>        
-                <button id="r3" type="button" class="btn btn-primary btn-lg">Multiplicación</button>
+                <h1 class="mb-2">¿Qué realizamos primero?</h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <button id="r1" type="button" class="btn btn-danger btn-lg mb-2">a) Paréntesis</button>
+                    </li>
+                    <li>
+                        <button id="r2" type="button" class="btn btn-warning btn-lg mb-2 text-white">b) Resta</button>
+                    </li>
+                    <li>
+                        <button id="r3" type="button" class="btn btn-primary btn-lg">c) Multiplicación</button>
+                    </li>
+                </ul>
             </div>
             
             <!-- Paso 2: Botones -->
             <div id="segundo" style="display:none;">
                 <br>
                 <h1>¿Multiplicamos o restamos?</h1>
-                <button id="r4"type="button" class="btn btn-danger btn-lg">Resta</button>
-                <button  id="r5"type="button" class="btn btn-warning btn-lg">Multiplicación</button>        
+                <ul class="list-unstyled">
+                    <li>
+                        <button id="r4" type="button" class="btn btn-danger btn-lg mb-2">a) Resta</button>
+                    </li>
+                    <li>
+                        <button id="r5" type="button" class="btn btn-success btn-lg">b) Multiplicación</button>
+                    </li>
+                    <br>
+                    <br>
+                </ul>
+                      
             </div>
             
             <!-- Paso 3: Botones -->
             <div id="tercero" style="display:none;">
                 <br>
                 <h1>¿Cual es el resultado de 45 - 7?</h1>
-                <button id="r6"type="button" class="btn btn-danger btn-lg">-32</button>
-                <button  id="r7"type="button" class="btn btn-warning btn-lg">38</button> 
-                <button  id="r8"type="button" class="btn btn-primary btn-lg">32</button>              
+                <ul class="list-unstyled">
+                    <li>
+                        <button id="r6" type="button" class="btn btn-danger btn-lg mb-2">a) -32</button>
+                    </li>
+                    <li>
+                        <button id="r7" type="button" class="btn btn-warning text-white btn-lg mb-2">b) 38</button>
+                    </li>
+                    <li>
+                        <button id="r8" type="button" class="btn btn-primary btn-lg">c) 32</button>
+                    </li>
+                </ul>
+                              
             </div>
             
             <!-- Mensajes de Correcto e Incorrecto -->
-            <div id="correcto" style="display:none;">
-                <h4 class="text-success" >¡Correcto!</h4>
-            </div>
-            <div id="incorrecto"style="display:none;">
-                <h4 class="text-danger" >¡Incorrecto!</h4>
-            </div>
+            
+            <div id="correcto" class="alert alert-success" style="display:none;" role="alert">
+                <h4>¡Correcto!</h4>
+              </div>
+            <div style="display:none;" id="incorrecto" class="alert alert-danger" role="alert">
+                <h4>¡Incorrecto!</h4>
+              </div>
+           
+              <div id="final" style="display: none;"></div>
+
+        </div>
+        <div id="tiempo"></div>
             </div>
             
         </div>

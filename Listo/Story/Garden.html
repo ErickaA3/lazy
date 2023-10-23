@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/0670e3e77f.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_Story.css">
+  <link rel="shortcut icon" href="img/Lazy.png">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+  </style>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fira+Code&family=Itim&display=swap');
+  </style>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+  </style>
+  <title>A Garden of Wishes</title>
+</head>
+<body>
+    
+    <div class="fondo"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: 'Concert One', cursive;">
+                <img src="img/Lazy.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+                <h1 class="m-0">LAZY</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+<div class="container ">
+  <h1 class="text-center mt-4 mb-4">A Garden of Wishes</h1>
+  <div class="fondo-historia">
+  <div id="historia" >
+    <p>Once upon a time, in a beautiful garden, there was a magical purple flower. This flower was not like the others. It was special. Every morning, when the sun smiled at it, the magical flower would open its colorful petals.</p>
+
+<p>Children from the nearby village loved to visit the garden and see the magical flower. They called it "Purple Petal" because it had all the shades of purple - from light lavender to deep violet. It was a burst of purple in the garden.</p>
+
+<p>But what made Purple Petal truly magical was its ability to grant wishes. When a child made a wish and blew a gentle kiss to the flower, the wish would come true. It was like having a fairy godmother in the garden!</p>
+
+<p>The children made simple wishes. "I wish for a big, sweet lollipop," said Max, and with a kiss, he had it. "I wish for a kite to fly in the sky," whispered Lily, and there it was in her hand.</p>
+
+<p>Purple Petal made the garden a place of laughter and joy. Children came from near and far to make their wishes and see their dreams come true.</p>
+
+<p>One day, a little girl named Emma came to the garden. She had a special wish, a wish to make her sick grandmother feel better. She closed her eyes, made her wish, and blew a gentle kiss to Purple Petal.</p>
+
+<p>The magical flower heard her wish and made it come true. Emma's grandmother felt better, and Emma was the happiest girl in the world. She knew that Purple Petal's magic was about love and kindness.</p>
+
+<p>And so, the garden with the magical purple flower became a place where children learned about the power of good wishes and the beauty of sharing love. Purple Petal continued to make the world a better place, one wish at a time, spreading happiness and purple smiles all around.</p> </div>
+</div>
+</div>
+<div class="container mt-5 mb-5 ">
+  <div class="fondo-historia">
+    <h1>Quiz about the Story</h1>
+
+    <div id="pregunta1" class="pregunta">
+      <h3>Question 1:  What made Purple Petal special in the garden?</h3>
+      <div class="respuesta btn btn-primary" id="respuesta1_1" onclick="verificarRespuesta('incorrecta', 'respuesta1_1')">I. Its size.</div>
+      <div class="respuesta btn btn-success" id="respuesta1_2" onclick="verificarRespuesta('incorrecta', 'respuesta1_2')">II. Its fragrance.</div>
+      <div class="respuesta btn btn-danger" id="respuesta1_3" onclick="verificarRespuesta('correcta', 'respuesta1_3')">III. Its color.</div>
+      <div class="respuesta btn btn-warning" id="respuesta1_4" onclick="verificarRespuesta('incorrecta', 'respuesta1_4')">IV. Its shape.</div>
+    </div>
+  
+    <div id="pregunta2" class="pregunta" style="display: none;">
+      <h3>Question 2:  How did children address the magical flower in the garden?</h3>
+      <div class="respuesta btn btn-primary" id="respuesta2_1" onclick="verificarRespuesta('incorrecta', 'respuesta2_1')">I. Magic Bloom.</div>
+      <div class="respuesta btn btn-success" id="respuesta2_2" onclick="verificarRespuesta('incorrecta', 'respuesta2_2')">II. Purple Bloom.</div>
+      <div class="respuesta btn btn-danger" id="respuesta2_3" onclick="verificarRespuesta('incorrecta', 'respuesta2_3')">III. Violet Petunia.</div>
+      <div class="respuesta btn btn-warning" id="respuesta2_4" onclick="verificarRespuesta('correcta', 'respuesta1_4')">IV. Purple Petal.</div>
+    </div>
+  
+    <div id="pregunta3" class="pregunta" style="display: none;">
+      <h3>Question 3: What was the unique ability of Purple Petal?</h3>
+      <div class="respuesta btn btn-primary" id="respuesta3_1" onclick="verificarRespuesta('correcta', 'respuesta3_1')">I. Granting wishes.</div>
+      <div class="respuesta btn btn-success" id="respuesta3_2" onclick="verificarRespuesta('incorrecta', 'respuesta3_2')">II. Growing rapidly.</div>
+      <div class="respuesta btn btn-danger" id="respuesta3_3" onclick="verificarRespuesta('incorrecta', 'respuesta3_3')">III. Dancing in the wind.</div>
+      <div class="respuesta btn btn-warning" id="respuesta3_4" onclick="verificarRespuesta('incorrecta', 'respuesta3_4')">IV. Changing colors.</div>
+    </div>
+  
+    <div id="pregunta4" class="pregunta" style="display: none;">
+      <h3>Question 4: What was Emma's special wish for Purple Petal?</h3>
+      <div class="respuesta btn btn-primary" id="respuesta4_1" onclick="verificarRespuesta('incorrecta', 'respuesta4_1')">I. A new toy.</div>
+      <div class="respuesta btn btn-success" id="respuesta4_2" onclick="verificarRespuesta('correcta', 'respuesta4_2')">II. Health for her grandmother.</div>
+      <div class="respuesta btn btn-danger" id="respuesta4_3" onclick="verificarRespuesta('incorrecta', 'respuesta4_3')">III. A magical wand.</div>
+      <div class="respuesta btn btn-warning" id="respuesta4_4" onclick="verificarRespuesta('incorrecta', 'respuesta4_4')">IV. A basket of fruits.</div>
+    </div>
+
+  <!-- Agrega preguntas 3, 4 y 5 de manera similar -->
+
+  <div id="resultado" class="mt-4"></div>
+
+  <div class="mt-4">
+    <button class="btn btn-info" onclick="siguientePregunta()"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  var preguntaActual = 1;
+  var respuestasCorrectas = 0;
+
+  function verificarRespuesta(valorRespuesta, idRespuesta) {
+    var resultadoDiv = document.getElementById("resultado");
+    var respuestaCorrecta = ''; // Variable para almacenar la respuesta correcta
+  
+    if (valorRespuesta === "correcta") {
+      respuestasCorrectas++;
+      resultadoDiv.innerHTML = '<div class="alert alert-success" role="alert">Correct! You have selected the correct answer.</div>';
+    } else {
+      // Obtener la respuesta correcta según la pregunta actual
+      switch (preguntaActual) {
+        case 1:
+          respuestaCorrecta = 'Its color';
+          break;
+        case 2:
+          respuestaCorrecta = 'Purple Petal';
+          break;
+            case 3:
+              respuestaCorrecta = 'Granting wishes';
+              break;
+                case 4:
+                  respuestaCorrecta = 'Health for her grandmother';
+                  break;
+        // Agrega casos para las demás preguntas según sea necesario
+      }
+  
+      resultadoDiv.innerHTML = '<div class="alert alert-danger" role="alert">Incorrect. The correct answer is ' + respuestaCorrecta + '.</div>';
+    }
+
+    // Cambia el color de fondo solo de la respuesta seleccionada
+    document.querySelectorAll('.respuesta').forEach(function(element) {
+      if (element.id === idRespuesta) {
+        element.style.backgroundColor = (valorRespuesta === "correcta") ? '' : '';
+      } else {
+        element.style.backgroundColor = '';
+      }
+      element.style.pointerEvents = 'none'; // Deshabilita todas las respuestas
+    });
+
+    // Deshabilita el botón de verificar después de seleccionar una respuesta
+    document.querySelector('button.btn-info').disabled = false;
+  }
+
+  function siguientePregunta() {
+    // Oculta la pregunta actual
+    document.getElementById("pregunta" + preguntaActual).style.display = "none";
+
+    // Incrementa el número de la pregunta actual
+    preguntaActual++;
+
+    // Muestra la siguiente pregunta
+    var siguientePreguntaDiv = document.getElementById("pregunta" + preguntaActual);
+    if (siguientePreguntaDiv) {
+      siguientePreguntaDiv.style.display = "block";
+
+      // Reinicia los mensajes de resultado y habilita las respuestas
+      document.getElementById("resultado").innerHTML = "";
+      document.querySelectorAll('.respuesta').forEach(function(element) {
+        element.style.pointerEvents = 'auto';
+        element.style.backgroundColor = '';
+      });
+      // Habilita el botón de siguiente pregunta
+      document.querySelector('button.btn-info').disabled = true;
+    } else {
+      // Si no hay más preguntas, muestra un mensaje final con el número de respuestas correctas
+      document.getElementById("resultado").innerHTML = '<div class="alert alert-info" role="alert">You have completed the quiz! Number of LAZY coins obtained: ' + respuestasCorrectas + '</div>';
+      document.querySelector('button.btn-info').disabled = true;
+    }
+  }
+</script>
+
+   
+<div class="tpl-snow">
+        
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script src="https://kit.fontawesome.com/0670e3e77f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<footer class="text-center container mt-4 mb-4 ">
+  ©LAZY Todos los derechos reservados, 2023
+</footer>
+</body>
+</html>
