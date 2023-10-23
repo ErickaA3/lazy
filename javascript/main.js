@@ -53,6 +53,16 @@
             document.getElementById('SextoMaterias').style.display = 'block';
             document.getElementById('SegundoMaterias').style.display = 'none';
         });
+
+        document.getElementById('btnSeptimo').addEventListener('click', function() {
+            document.getElementById('PrimeroMaterias').style.display = 'none';
+            document.getElementById('TerceroMaterias').style.display = 'none';
+            document.getElementById('CuartoMaterias').style.display = 'none';
+            document.getElementById('QuintoMaterias').style.display = 'none';
+            document.getElementById('SextoMaterias').style.display = 'none';
+            document.getElementById('SegundoMaterias').style.display = 'none';
+            document.getElementById('SeptimoMaterias').style.display = 'block';
+        });
     });
 
 
