@@ -5,28 +5,12 @@ function iniciar() {
     setTimeout(function() {
         document.getElementById('paso1').style.display = 'flex';
         document.getElementById('primero').style.display = 'block';
-        iniciarContador();
+        
     }, 2000);
 }
 
 
-function iniciarContador() {
-    tiempoInicio = new Date().getTime(); // Guardar el tiempo de inicio
 
-    tiempoIntervalo = setInterval(function() {
-        let tiempoActual = new Date().getTime(); // Obtener el tiempo actual
-        let tiempoTranscurrido = tiempoActual - tiempoInicio; // Calcular el tiempo transcurrido
-
-        let segundos = Math.floor((tiempoTranscurrido % (1000 * 60)) / 1000); // Calcular los segundos
-
-        // Actualizar el elemento con el tiempo transcurrido
-        document.getElementById('tiempo').textContent = 'Tiempo transcurrido: ' + segundos + ' segundos';
-        
-    }, 1000); // Actualizar cada segundo (1000 ms)
-}
-function detenerContador() {
-    clearInterval(tiempoIntervalo); // Detener el intervalo
-}
 function respuesta1() {
     document.getElementById('r1').addEventListener('click', function() {
         document.getElementById('correcto').style.display = 'block';
@@ -134,7 +118,7 @@ function resultado(){
     setTimeout(function() {
         
         document.getElementById('paso4').style.display = 'block';
-        
+        document.getElementById('cuarto').style.display = 'block';
         
         
 
